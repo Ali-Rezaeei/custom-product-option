@@ -1,0 +1,17 @@
+#cpo-admin .desc { opacity:.85; margin-bottom:8px }
+.cpo-field{border:1px solid #e5e5e5;padding:10px;margin-bottom:12px;border-radius:8px;background:#fff}
+.cpo-field-head{display:flex; justify-content: space-around; align-items:center}
+.cpo-field-head label{font-weight:600}
+.cpo-field-head .cpo-inline{grid-column: span 2}
+.cpo-groups{margin-top:10px;display:flex;flex-direction:column;gap:12px}
+.cpo-group{border:1px dashed #e3e3e3;padding:10px;border-radius:10px;background:#fafafa}
+.cpo-group-head{display:flex; justify-content: space-around; align-items:center;margin-bottom:8px}
+.cpo-group-head label{font-weight:600}
+.cpo-values table.widefat td, .cpo-values table.widefat th{vertical-align:top}
+.cpo-thumb img{max-width:80px;height:auto;border-radius:6px;border:1px solid #ddd;margin-top:6px}
+.hint{opacity:.8}
+.cpo-icon-btn{display:flex;border:none;background:none;padding:4px 6px; cursor: pointer; color: #8d0202;}
+.cpo-icon-btn .dashicons{line-height:1;font-size:18px}
+
+.cpo-key.cpo-invalid{border-color:#dc3232; background:#fff5f5}
+.cpo-error{display:block;color:#dc3232;font-size:12px;margin-top:2px;height:14px}

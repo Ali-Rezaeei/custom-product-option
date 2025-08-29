@@ -1,0 +1,36 @@
+/* ردیف‌های کنار محصول: لیبل + پیش‌نمایش + دکمه */
+.cpo-inline-panel{ display:flex; flex-direction:column; gap:12px; margin:12px 0 18px; }
+.cpo-inline-row{ display:grid; grid-template-columns: 160px 1fr 160px; align-items:center; gap:12px; }
+.cpo-label{ font-weight:700; color:#333; border-radius: 6px; padding: 4px 8px; background:#f7f7f7; }
+.cpo-label:hover{ background:#f0f0f0; }
+.cpo-preview{ display:flex; align-items:center; gap:8px; min-height:36px; }
+.cpo-preview-swatch{ width:32px; height:24px; border:1px dashed #ccc; border-radius:4px; display:inline-flex; align-items:center; justify-content:center; overflow:hidden; }
+.cpo-preview-swatch img{ width:100%; height:100%; object-fit:cover; }
+.cpo-preview-code{ font-size:14px; color:#555; white-space:nowrap; }
+
+.cpo-modal{ position:fixed; inset:0; z-index:99999; }
+.cpo-modal-backdrop{ position:absolute; inset:0; background:rgba(0,0,0,.45); }
+.cpo-modal-dialog{ position:relative; max-width:960px; margin:6vh auto; background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,.3); }
+.cpo-modal-header{ display:flex; justify-content:space-between; align-items:center; padding:14px 18px; border-bottom:1px solid #eee; }
+.cpo-modal-tabs{ display:flex; gap:10px; padding:10px 16px; border-bottom:1px solid #eee; flex-wrap:wrap; justify-content: center; align-items: center; }
+.cpo-tab{ border:1px solid #eee; background:#f7f7f7; padding:8px 12px; border-radius:10px; cursor:pointer; }
+.cpo-tab.active{ background:#ffefef; color:#d00; border-color:#fcc; }
+.cpo-modal-body{ padding:18px; max-height:65vh; overflow:auto; }
+.cpo-options-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(120px, 1fr)); gap:14px; }
+
+.cpo-card{ display:flex; flex-direction:column; gap:8px; padding:10px; border:1px solid #eee; border-radius:12px; background:#fff; cursor:pointer; align-items: center; }
+.cpo-card:hover{ border-color:#ddd; box-shadow:0 2px 10px rgba(0,0,0,.05); }
+.cpo-thumb img{ width:64px; height:64px; object-fit:cover; border-radius:8px; border:1px solid #ddd; }
+.cpo-swatch{ width:64px; height:64px; border-radius:8px; border:1px solid #ddd; display:inline-block; }
+.cpo-card-meta{ font-size:12px; color:#333; line-height:1.5; }
+.cpo-card-label{ font-weight:600; }
+.cpo-card-code{ opacity:.85; }
+
+.cpo-image-preview {position: fixed;inset: 0;display: flex;justify-content: center;align-items: center;background: rgba(0,0,0,0.8);z-index: 100000;}
+.cpo-image-preview img {max-width: 90%;  max-height: 90%;  border-radius: 8px;box-shadow: 0 0 20px rgba(0,0,0,0.5);cursor: zoom-out;}
+.cpo-image-backdrop { position: absolute;inset: 0;}
+.cpo-image-preview {  position: fixed;  inset: 0;  display: flex;  justify-content: center;  align-items: center;  background: rgba(0,0,0,0.8);z-index: 100000;}
+.cpo-image-backdrop { position: absolute;inset: 0;}
+.cpo-image-preview img {  max-width: 90%;  max-height: 90%;  border-radius: 8px;  box-shadow: 0 0 20px rgba(0,0,0,0.5);}
+.cpo-image-close {  position: absolute;  top: 20px;  right: 20px;  font-size: 28px;  background: none;  border: none;  color: white;  cursor: pointer;  z-index: 1;  line-height: 1;}
+.cpo-image-close:hover {  color: #ff6666;}
