@@ -41,7 +41,19 @@
       group.values.forEach(function(v){
         var $card = $('<button type="button" class="cpo-card"></button>').attr('data-key', v.key);
         if(v.thumb){
-          $card.append('<span class="cpo-thumb"><img src="'+ v.thumb +'" alt="'+ (v.label || '') +'"></span>');
+          var $thumb = $('<span class="cpo-thumb"></span>');
+            var $img = $('<img>', {
+                src: v.thumb,
+                alt: v.label || ''
+            });
+            var $zoomIcon = $('<span class="cpo-zoom-icon" title="View larger image">🔍</span>');
+            $zoomIcon.on('click', function(e){
+                e.stopPropagation();
+                $('.cpo-image-preview img').attr('src', v.thumb);
+                $('.cpo-image-preview').fadeIn(150);
+            });
+            $thumb.append($img).append($zoomIcon);
+            $card.append($thumb);
         }else if(v.color){
           $card.append('<span class="cpo-swatch" style="background:'+ v.color +'"></span>');
         }else{
