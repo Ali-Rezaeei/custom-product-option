@@ -12,8 +12,8 @@ class CPO_Frontend {
 
     public function enqueue_assets() {
         if (is_product()) {
-            wp_enqueue_style('cpo-frontend', CPO_BASE_URL . 'assets/css/frontend.css', [], '1.2.2');
-            wp_enqueue_script('cpo-frontend', CPO_BASE_URL . 'assets/js/frontend.js', ['jquery'], '1.2.2', true);
+            wp_enqueue_style('cpo-frontend', CPO_BASE_URL . 'assets/css/frontend.css', [], '1.2.3');
+            wp_enqueue_script('cpo-frontend', CPO_BASE_URL . 'assets/js/frontend.js', ['jquery'], '1.2.3', true);
         }
     }
     public function render_field_rows() {
